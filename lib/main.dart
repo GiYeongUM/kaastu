@@ -20,13 +20,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScreenUtilInit(
-      designSize: const Size(360, 690),
-      builder: () => GetMaterialApp(
+   return ScreenUtilInit(
+      designSize: const Size(1080, 2160),
+      builder: (context) => GetMaterialApp(
         builder: EasyLoading.init(
             builder: (context, widget){
               return MediaQuery(
-                data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0),
+                data: MediaQuery.of(context).copyWith(textScaleFactor: 0.8),
                 child: widget!,
               );
             }
